@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up — Coding Courses</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom,
+        #0C0420, #5D3C64, #7B466A, #9F6496, #BA6E8F);
+    }
+    .card {
+      width: 350px;
+      padding: 30px;
+      background: rgba(255,255,255,0.08);
+      border-radius: 18px;
+      text-align: center;
+      color: #F8EAF3;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      animation: fade 0.8s ease;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    label {
+      display: block;
+      margin: 12px 0 6px;
+      color: #E1C0D9;
+      font-size: 14px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.15);
+      color: #F8EAF3;
+      outline: none;
+      font-size: 14px;
+      transition: 0.2s;
+    }
+
+    input:focus {
+      background: rgba(255,255,255,0.25);
+      border: 1px solid #D391B0;
+    }
+
+    input::placeholder {
+      color: rgba(255,255,255,0.75);
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      background: #7B466A;
+      color: #F8EAF3;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #9F6496;
+    }
+    .link {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #E1C0D9;
+    }
+
+    .link a {
+      color: #F8EAF3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="card">
+    <h2>Create Account</h2>
+    <p>Join us and start learning today</p>
+
+    <form>
+      <label>Full Name</label>
+      <input type="text" placeholder="Your name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="you@example.com" required>
+
+      <label>Password</label>
+      <input type="password" placeholder="Create a password" required>
+
+      <label>Confirm Password</label>
+      <input type="password" placeholder="Re-enter password" required>
+
+      <button type="submit">Sign Up</button>
+    </form>
+
+    <div class="link">
+      Already have an account? <a href="login.html">Sign in</a>
+    </div>
+  </div>
+
+</body>
+</html>
