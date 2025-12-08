@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <!-- عشان يكون مناسب لشاشة الموبايل -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+
+    <title>Explore Categories</title>
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"   rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"> </script>
+
+
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        }
+
+
+      .navbar {
+        background-color: #001d39;
+          }
+
+
+      .auth-buttons .btn {
+        padding: 6px 16px;
+        font-size: 15px;
+        border-radius: 6px;
+      }
+ 
+
+
+      .page-title {
+        font-size: 50px;
+        font-weight: bold;
+        color: #375879;
+        padding: 40px;
+         margin-top: 50px;
+         text-align: center;
+      }
+
+
+       .title {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        color: #0a4174;
+        padding: 5px;
+        text-align: center;
+      }
+
+
+
+
+      .category-card {
+        background-color: #ffffffde;
+        border-radius: 40px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+
+      .category-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 20px rgba(64, 63, 63, 0.15);
+      }
+
+
+
+      .category-card:hover img {
+        transform: scale(1.1);
+        filter: brightness(1.2);
+        transition: 0.5s;
+     }
+
+
+      .category-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      }
+
+      .category-card img {
+        width: 100%;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 15px;
+        border-radius: 40px;
+        background-color: #ddd;
+      }
+
+
+      .category-card h5 a {
+        text-decoration: none;
+        color: #0a4174;
+        font-weight: 500;
+        font-size: 1.1rem;
+      }
+
+
+      .category-card p {
+        font-size: 0.9rem;
+        color: #555;
+        margin-bottom: 15px;
+      }
+
+
+      .category-card .btn {
+        background-color: #001d39;
+        border-color: #001d39;
+        color: white;
+        border-radius: 100px;
+
+   
+      }
+
+
+      .category-card h5 a {
+        text-decoration: none;
+        color: #001d39;
+        font-weight: 700;
+        font-size: 1.5rem; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.2); 
+        transition: color 0.3s;
+      }
+
+
+    .category-card h5 a:hover {
+     color: #0a74d1; 
+      }
+
+    .btn.w-100 {
+     position: relative;
+     overflow: hidden;
+     z-index: 1;
+    }
+
+
+
+  .btn.w-100::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #00315e;
+    transition: width 0.4s ease;
+    z-index: -1;
+    }
+
+
+  .btn.w-100:hover::before {
+    width: 100%;
+    }
+
+  .btn.w-100:hover {
+    color: #fff !important;
+    }
+
+  .row.g-4 {
+        row-gap: 30px;
+        column-gap: 30px;
+        justify-content: center; 
+        }
+    </style>
+
+
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top " style="background-color:#001d39;">
+    <div class="container ms-2 me-0">
+
+
+        <!--logo-->
+        <a class="navbar-brand fw-bold me-3" href="/a.courses patform/templates/index.html"><img src="style/HelperChoice Logo _ SVG _ Real Company _ Alphabet, Letter H Logo3.png" width="60px"></a>
+        <!--burger icon-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+        <!--list-->
+        <div class="collapse navbar-collapse" id="nav">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="/a.courses patform/templates/index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/a.courses patform/templates/mycourses.html">My Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="#choose">About Us</a></li>
+
+
+        <!--dropdown explore-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="categoriesDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
+                        <li><a class="dropdown-item" href="#">Languages</a></li>
+                        <li><a class="dropdown-item" href="#">Programming Basics</a></li>
+                        <li><a class="dropdown-item" href="#">Data Analysis</a></li>
+                        <li><a class="dropdown-item" href="#">Graphic Design</a></li>
+                        <li><a class="dropdown-item" href="#">Soft Skills</a></li>
+                        <li><a class="dropdown-item" href="#">Web development</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+            <!--btns-->
+            <div class="btns d-flex ">
+                <a href="/a.courses patform/templates/login.html" class="btn btn-outline-light me-2" style="border-radius:25px;">Login</a>
+                <a href="/a.courses patform/templates/signup.html" class="btn btn-primary" style="border-radius:25px; background-color: #001d39; border-color: #001d39;">Sign Up</a>
+            </div>
+
+        </div>
+    </div>
+</nav>
+<style>
+
+
+.navbar .dropdown-menu {
+
+    background-color: #bdd8e9; 
+    color: #001d39;
+
+    padding: 10px;
+    border: none;
+
+}
+
+
+.navbar .dropdown-item {
+    color: #001d39;
+    margin-right: 100px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+
+.navbar .dropdown-item:hover {
+    background-color: #004075;
+    color: #fff;
+    transform: translateX(5px);
+}
+
+</style>
+
+
+    <div class="page-title">Explore Categories</div>
+
+
+    <!-- <div class="title">
+      Advance in your career with recognized credentials across levels.
+    </div> -->
+
+
+
+    <div class="container">
+    <div class="row g-4 justify-content-center">
+
+
+        
+  <!-- Web Development -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/wweebb.jpg" alt="Web Development" />
+      <h5><a href="#">Web Development</a></h5>
+      <p>Learn to build websites and web apps using HTML, CSS, and JS.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Programming Basics -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/_Semantic-HTML-Accessibility-1-.png" alt="Programming Basics" />
+      <h5><a href="#">Programming Basics</a></h5>
+      <p>Master the fundamentals of programming logic and syntax.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Data -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/data ss.jpg" alt="Data" />
+      <h5><a href="#">Data</a></h5>
+      <p>Explore all aspects of data, including analysis, science, and management.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Artificial Intelligence -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Artificial Intelligence.jpg" alt="Artificial Intelligence" />
+      <h5><a href="#">Artificial Intelligence</a></h5>
+      <p>Explore AI concepts, machine learning, and neural networks.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Business -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Business.jpg" alt="Business" />
+      <h5><a href="#">Business</a></h5>
+      <p>Learn management, entrepreneurship, and business strategy.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Information Technology -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Information Technology.jpg" alt="Information Technology" />
+      <h5><a href="#">Information Technology</a></h5>
+      <p>Explore IT infrastructure, networking, and system administration.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Computer Science -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Computer Science.jpg" alt="Computer Science" />
+      <h5><a href="#">Computer Science</a></h5>
+      <p>Learn algorithms, data structures, and software development.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Healthcare -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Healthcare.jpg" alt="Healthcare" />
+      <h5><a href="#">Healthcare</a></h5>
+      <p>Explore medical sciences, healthcare technology, and patient care.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Physical Science & Engineering -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Physical Science & Engineering.jpg" alt="Physical Science and Engineering" />
+      <h5><a href="#">Physical Science & Engineering</a></h5>
+      <p>Learn physics, engineering concepts, and applied sciences.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Personal Development -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Personal Development.jpg" alt="Personal Development" />
+      <h5><a href="#">Personal Development</a></h5>
+      <p>Enhance self-growth, productivity, and life skills.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Social Sciences -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Social Sciences.png" alt="Social Sciences" />
+      <h5><a href="#">Social Sciences</a></h5>
+      <p>Study society, psychology, and human behavior.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+  <!-- Language Learning -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/Language Learning.jpg" alt="Language Learning" />
+      <h5><a href="#">Language Learning</a></h5>
+      <p>Learn new languages to enhance communication and career.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+
+<!-- Arts & Humanities -->
+  <div class="col-auto">
+    <div class="category-card">
+      <img src="/images/arts.jpg" alt="Arts and Humanities" />
+      <h5><a href="#">Arts & Humanities</a></h5>
+      <p>Explore culture, literature, philosophy, and creative arts.</p>
+      <a href="#" class="btn w-100">Explore</a>
+    </div>
+  </div>
+</div>
+
+
+      </div>
+    </div>
+  </body>
+</html>
