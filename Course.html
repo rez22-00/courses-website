@@ -2,20 +2,432 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Complete Web Development Course</title>
+    <title>Web Development Course</title>
+    <link rel="stylesheet" href="style/coursestyle.css" />
+
     <style>
+      /* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3ece2;
+}
+
+.container {
+  width: 100%;
+  max-width: 10000px;
+  box-sizing: border-box;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #7d86a3);
+  color: white;
+  padding: 40px;
+  max-width: 100%;
+  padding-bottom: 100px;
+}
+
+.hero-left {
+  max-width: 60%;
+}
+
+.hero-left h1 {
+  font-size: 36px;
+  margin: 0 0 15px;
+}
+
+.short-desc {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.badges {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.enroll-hero {
+  background: white;
+  color: #091f38;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 25px;
+}
+
+.instructor-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.instructor-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.instructor-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.instructor-name {
+  font-weight: bold;
+  color: rgb(2, 0, 0);
+}
+
+.instructor-bio {
+  font-size: 13px;
+  color: #010000;
+}
+
+.hero-right .hero-img {
+  width: 250px;
+  height: 180px;
+  background: #d7e7ff;
+  border-radius: 15px;
+}
+
+.section {
+  border-radius: 10px;
+
+  top: 50px;
+  position: relative;
+}
+
+.section {
+  max-width: 800px;
+  margin-top: 70px;
+}
+
+.section1.about-box {
+  display: flex;
+  background: white;
+  border: 1px solid #c7ddff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-left: 110px;
+  margin-bottom: 20px;
+  position: relative;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+}
+
+.section1 {
+  max-width: 1250px;
+  margin-left: 110px;
+  background: white;
+
+  top: -70px;
+  position: relative;
+  box-shadow: 20px 20px 20px 0px rgba(9, 0, 0, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #c7ddff;
+}
+
+.section1 h2 {
+  margin: 0 0 15px;
+  color: #0d2b4a;
+  font-size: 22px;
+}
+
+.section1 p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.section1 h2 {
+  margin: 0 0 15px;
+  color: #0d2b4a;
+  font-size: 22px;
+}
+
+.section1 p {
+  margin: 6px 0;
+  color: #333;
+  font-size: 15px;
+}
+
+.ins-cont {
+  display: flex;
+  gap: 25px;
+  align-items: flex-start;
+
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.ins-cont .section {
+  width: 60%;
+}
+
+.points-grid {
+  list-style: none;
+  padding-left: 0;
+  margin: 10px 0 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px 30px;
+}
+
+.points-grid li {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.4;
+}
+
+summary {
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: bold;
+  color: #0d2b4a;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #6d8092;
+  max-width: 700px;
+  margin-left: 30px;
+}
+
+summary::-webkit-details-marker {
+  font-size: 24px;
+  color: #0077ff;
+}
+
+.text-under ul.points-grid {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 20px;
+}
+
+.text-under li {
+  margin-left: 33px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 16px;
+  color: #333;
+  line-height: 1.6;
+}
+
+.text-under li svg {
+  margin-right: 10px;
+  margin-top: 3px;
+  color: #000407;
+}
+
+.text-under h2 {
+  margin-left: 40px;
+  color: #0d2b4a;
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #6d8092;
+}
+
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 55px;
+}
+
+.lesson:last-child {
+  border-bottom: none;
+}
+
+.lesson-title {
+  font-weight: bold;
+  color: #0d2b4a;
+}
+
+.lesson-icons span {
+  margin-left: 10px;
+  font-size: 14px;
+  color: #0077ff;
+  cursor: default;
+}
+
+.certificate {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff4e5;
+  border: 1px solid #ffd7a0;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 150px;
+  max-width: 800px;
+  margin-left: 300px;
+}
+
+.certificate-info h3 {
+  margin: 0 0 10px;
+  color: #a65f00;
+}
+
+.certificate-info p {
+  margin: 0;
+  color: #7a4b00;
+  font-size: 14px;
+}
+
+.certificate button {
+  padding: 10px 20px;
+  background: #a65f00;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.enroll-fixed {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-weight: bold;
+  color: #0b2e4b;
+  background: #0f4c81;
+  padding: 15px 20px;
+  text-align: center;
+  z-index: 100;
+}
+
+.enroll-fixed button {
+  padding: 12px 25px;
+  border: none;
+  background: white;
+  color: #0f4c81;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.section1.about-box {
+  display: flex;
+  background: white;
+  border: 1px solid #c7ddff;
+  border-radius: 15px;
+  padding: 25px;
+  margin-left: 110px;
+  position: relative;
+  top: -70px;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-item {
+  flex: 1;
+  text-align: center;
+}
+
+.about-item h3 {
+  margin: 0 0 5px 0;
+  color: #0d2b4a;
+  font-size: 16px;
+}
+
+.about-item p {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+  line-height: 1.4;
+}
+
+.about-divider {
+  width: 1px;
+  background: #c7ddff;
+  height: 80px;
+  margin: 0 15px;
+}
+
+.ad-box {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  bottom: -100px;
+}
+
+.ad-image {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  max-height: 300px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  font-size: 16px;
+  cursor: pointer;
+}
+ */
+
+      /*********************/
+/* لجعل الفوتر يلتصق بأسفل الصفحة حتى لو المحتوى قليل */
+html, body {
+    height: 100%;
+}
+body {
+    display: flex;
+    flex-direction: column;
+   /* مساحة عشان الـ Navbar الـ Fixed ما يغطي الكلام */
+}
+.footer {
+    background-color: #001d39;
+}
       body {
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #eaf4ff;
+        background-color: #f3ece2;
       }
 
-      .container {
+      .container-courses {
         width: 100%;
-        max-width: 10000px;
-        /* margin-top: 50px; */
-        /* padding: 0 20px 100px; */
         box-sizing: border-box;
       }
 
@@ -23,14 +435,12 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(135deg, #185890, #1b5f63);
+        background: linear-gradient(135deg, #7d86a3);
         color: white;
         padding: 40px;
-        /* border-radius: 15px; */
-        /* margin-bottom: 30px; */
-        max-width: 100%;
+        max-width: 100000000px;
         padding-bottom: 100px;
-        
+        margin-top: 50px;
       }
 
       .hero-left {
@@ -62,7 +472,7 @@
 
       .enroll-hero {
         background: white;
-        color: #0077ff;
+        color: #091f38;
         padding: 12px 25px;
         border: none;
         border-radius: 10px;
@@ -76,22 +486,30 @@
         align-items: center;
         gap: 10px;
       }
-
       .instructor-photo {
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background: #cfe0ff;
+        object-fit: cover;
+        display: block;
+      }
+
+      .instructor-photo img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
       }
 
       .instructor-name {
         font-weight: bold;
-        color: white;
+        color: rgb(2, 0, 0);
       }
 
       .instructor-bio {
         font-size: 13px;
-        color: #f0f0f0;
+        color: #010000;
       }
 
       .hero-right .hero-img {
@@ -101,77 +519,44 @@
         border-radius: 15px;
       }
 
-
-
-
       .section {
-        background: rgb(255, 255, 255);
-        /* margin-top: 20px; */
-        padding: 25px;
         border-radius: 10px;
-        border: 1px solid #c7ddff; 
-        
+
+        top: 50px;
+        position: relative;
       }
 
       .section {
-        max-width: 5000px;   /* يصغر البوكس */
-        margin: 10px 30px 10px 10px;  /* يخليه للشمال بدل ما يكون في النص */
+        max-width: 800px;
         margin-top: 70px;
-        padding: 20px;
+      }
+
+      .section1.about-box {
+        display: flex;
+        background: white;
         border: 1px solid #c7ddff;
-         margin-left: 30px;
-     
-               }
-
-
-
-.section1.about-box {
-  display: flex;
-  background: white;
-  border: 1px solid #c7ddff;
-  border-radius: 15px;
-  padding: 25px;
-  margin-left: 110px;
-  margin-bottom: 20px; /* خففنا المسافة تحت */
-  position: relative;
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
-  align-items: center;
-  justify-content: space-between;
-  top: 0; /* شيلنا -70px */
-}
-
-
-
-
-
+        border-radius: 15px;
+        padding: 25px;
+        margin-left: 110px;
+        margin-bottom: 20px;
+        position: relative;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+      }
 
       .section1 {
-         max-width: 1250px;   /* يصغر البوكس */
+        max-width: 1250px;
         margin-left: 110px;
         background: white;
-     
+
         top: -70px;
- position: relative;
-   box-shadow: 20px 20px 20px 0px rgba(9, 0, 0, 0.1); /* عشان يبان طاير */
+        position: relative;
+        box-shadow: 20px 20px 20px 0px rgba(9, 0, 0, 0.1);
         padding: 25px;
         border-radius: 15px;
         border: 1px solid #c7ddff;
-
-
-     
-      }
-
-
-      .section1 h2 {
-        margin: 0 0 15px;
-        color: #0d2b4a;
-        font-size: 22px;
-      }
-
-      .section1 p {
-        margin: 6px 0;
-        color: #333;
-        font-size: 15px;
       }
 
       .section1 h2 {
@@ -186,79 +571,102 @@
         font-size: 15px;
       }
 
+      .section1 h2 {
+        margin: 0 0 15px;
+        color: #0d2b4a;
+        font-size: 22px;
+      }
 
-.points-grid {
-  list-style: none;
-  padding-left: 0;
-  margin: 10px 0 0 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* كل عمود بعرض 200px */
-  gap: 10px 30px; /* المسافة بين الصفوف والأعمدة */
-}
+      .section1 p {
+        margin: 6px 0;
+        color: #333;
+        font-size: 15px;
+      }
 
-.points-grid li {
-  display: flex;
-  align-items: center;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.4;
-}
+      .ins-cont {
+        display: flex;
+        gap: 25px;
+        align-items: flex-start;
 
-summary {
-  cursor: pointer;
-  font-size: 24px;
-  font-weight: bold;
-  color: #0d2b4a;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #6d8092;
-  max-width: 700px;
-}
+        margin-top: 40px;
+        margin-bottom: 100px;
+      }
+      .ins-cont .section {
+        width: 60%;
+      }
 
-summary::-webkit-details-marker {
-  font-size: 24px;
-  color: #0077ff;
-}
+      .points-grid {
+        list-style: none;
+        padding-left: 0;
+        margin: 10px 0 0 20px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 10px 30px;
+      }
 
-.text-under ul.points-grid {
-  list-style: none;
-  padding: 0;
-  display: grid;
-  grid-template-columns: repeat(3, auto); /* كل صف فيه نقطتين */
-  gap: 20px; /* المسافة بين النقاط */
-}
+      .points-grid li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.4;
+      }
 
-.text-under li {
-  margin-left: 33px;
-  display: flex;
-  align-items: flex-start;
-  font-size: 16px;
-  color: #333;
-  line-height: 1.6;
-}
+      summary {
+        cursor: pointer;
+        font-size: 24px;
+        font-weight: bold;
+        color: #0d2b4a;
+        padding-bottom: 5px;
+        border-bottom: 1px solid #6d8092;
+        max-width: 700px;
+        margin-left: 30px;
+      }
 
-.text-under li svg {
-  margin-right: 10px;
-  margin-top: 3px;
-  color: #000407; /* لون علامة الصح */
-}
+      summary::-webkit-details-marker {
+        font-size: 24px;
+        color: #0077ff;
+      }
 
+      .text-under ul.points-grid {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        gap: 20px;
+      }
 
-.text-under h2 {
-  margin-left: 40px;
-  color: #0d2b4a;
-  font-size: 24px;
-  margin-bottom: 15px;
-  padding-bottom: 10px;
-  border-bottom: 1px solid #6d8092; /* الخط الطويل تحت العنوان */}
+      .text-under li {
+        margin-left: 33px;
+        display: flex;
+        align-items: flex-start;
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      .text-under li svg {
+        margin-right: 10px;
+        margin-top: 3px;
+        color: #000407;
+      }
+
+      .text-under h2 {
+        margin-left: 40px;
+        color: #0d2b4a;
+        font-size: 24px;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #6d8092;
+      }
 
       .lesson {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 10px 0;
+        padding: 15px 0;
         border-bottom: 1px solid #e0e0e0;
+        margin-left: 55px;
       }
 
       .lesson:last-child {
@@ -286,9 +694,9 @@ summary::-webkit-details-marker {
         padding: 20px;
         border-radius: 15px;
         margin-top: 25px;
-          margin-bottom: 150px;
-          max-width: 800px;
-          margin-left: 300px;
+        margin-bottom: 150px;
+        max-width: 800px;
+        margin-left: 300px;
       }
 
       .certificate-info h3 {
@@ -316,9 +724,9 @@ summary::-webkit-details-marker {
         position: fixed;
         bottom: 0;
         left: 0;
-        right: 0;  
+        right: 0;
         font-weight: bold;
-        color:#0b2e4b;
+        color: #0b2e4b;
         background: #0f4c81;
         padding: 15px 20px;
         text-align: center;
@@ -337,47 +745,102 @@ summary::-webkit-details-marker {
       }
 
       .section1.about-box {
-  display: flex;
-  background: white;
-  border: 1px solid #c7ddff;
-  border-radius: 15px;
-  padding: 25px;
-  margin-left: 110px;
-  position: relative;
-  top: -70px;
-  box-shadow: 20px 20px 20px rgba(0,0,0,0.1);
-  align-items: center;
-  justify-content: space-between;
-}
+        display: flex;
+        background: white;
+        border: 1px solid #c7ddff;
+        border-radius: 15px;
+        padding: 25px;
+        margin-left: 110px;
+        position: relative;
+        top: -70px;
+        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: space-between;
+      }
 
-.about-item {
-  flex: 1;
-  text-align: center;
-}
+      .about-item {
+        flex: 1;
+        text-align: center;
+      }
 
-.about-item h3 {
-  margin: 0 0 5px 0;
-  color: #0d2b4a;
-  font-size: 16px;
-}
+      .about-item h3 {
+        margin: 0 0 5px 0;
+        color: #0d2b4a;
+        font-size: 16px;
+      }
 
-.about-item p {
-  margin: 0;
-  font-size: 13px;
-  color: #333;
-  line-height: 1.4;
-}
+      .about-item p {
+        margin: 0;
+        font-size: 13px;
+        color: #333;
+        line-height: 1.4;
+      }
 
-.about-divider {
-  width: 1px;
-  background: #c7ddff;
-  height: 80px; /* طول الخط العمودي */
-  margin: 0 15px;
-}
+      .about-divider {
+        width: 1px;
+        background: #c7ddff;
+        height: 80px;
+        margin: 0 15px;
+      }
+
+      .ad-box {
+        position: relative;
+        width: 100%;
+        max-width: 500px;
+        margin: 20px auto;
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        bottom: -100px;
+      }
+
+      .ad-image {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        max-height: 300px;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        cursor: pointer;
+      }
     </style>
+
+    <!--ربط النافبار و الفوتر-->
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        });
+    </script>
+
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer").innerHTML = data;
+        });
+    </script>
   </head>
+
   <body>
-    <div class="container">
+    <div id="navbar"></div>
+
+    <div class="container-courses">
       <div class="hero">
         <div class="hero-left">
           <h1>Complete Web Development Course</h1>
@@ -392,7 +855,14 @@ summary::-webkit-details-marker {
           </div>
           <button class="enroll-hero">Enroll Now</button>
           <div class="instructor-box">
-            <div class="instructor-photo"></div>
+            <div class="instructor-photo">
+              <img
+                src="/images/inst.jpg"
+                alt="Instructor Photo"
+                width="50"
+                height="50"
+              />
+            </div>
             <div>
               <div class="instructor-name">Alex Johnson</div>
               <div class="instructor-bio">
@@ -402,125 +872,207 @@ summary::-webkit-details-marker {
           </div>
         </div>
         <div class="hero-right">
-          <div class="hero-img">
-            <img src="" alt="">
-          </div>
+          <!-- <div class="hero-img">
+            <img src="/images/inssssss.jpg" alt="">
+          </div> -->
         </div>
       </div>
 
-<div class="section1 about-box">
-  <div class="about-item">
-    <h3>4 Modules</h3>
-    <p>Gain insight into a topic and learn the fundamentals.</p>
-  </div>
-  <div class="about-divider"></div>
-  <div class="about-item">
-    <h3>4.9 ⭐️</h3>
-    <p>(98,812 reviews)</p>
-  </div>
-  <div class="about-divider"></div>
-  <div class="about-item">
-    <h3>Beginner Level</h3>
-    <p>No prior experience required</p>
-  </div>
-  <div class="about-divider"></div>
-  <div class="about-item">
-    <h3>1 week</h3>
-    <p>10 hours a week, Flexible schedule</p>
-  </div>
-  <div class="about-divider"></div>
-  <div class="about-item">
-    <h3>99% liked it</h3>
-    <p>Most learners liked this course</p>
-  </div>
-</div>
+      <div class="section1 about-box">
+        <div class="about-item">
+          <h3>4 Modules</h3>
+          <p>Gain insight into a topic and learn the fundamentals.</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-item">
+          <h3>4.9 ⭐️</h3>
+          <p>(98,812 reviews)</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-item">
+          <h3>Beginner Level</h3>
+          <p>No prior experience required</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-item">
+          <h3>1 week</h3>
+          <p>10 hours a week, Flexible schedule</p>
+        </div>
+        <div class="about-divider"></div>
+        <div class="about-item">
+          <h3>99% liked it</h3>
+          <p>Most learners liked this course</p>
+        </div>
+      </div>
 
-  <div class="text-under">
- <details open>
-    <summary>About this Course</summary>
-    <ul class="points-grid">
-    <li>
-      <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-        <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-      </svg>
-      Learn HTML, CSS, and JavaScript
-    </li>
-    <li>
-      <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-        <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-      </svg>
-      Build responsive websites
-    </li>
-    <li>
-      <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-        <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-      </svg>
-      Hands-on projects & quizzes
-    </li>
-    <li>
-      <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-        <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-      </svg>
-      Complete course & earn certificate
-    </li>
+      <div class="text-under">
+        <details open>
+          <summary>About this Course</summary>
+          <ul class="points-grid">
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Learn HTML, CSS, and JavaScript
+            </li>
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Build responsive websites
+            </li>
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Hands-on projects & quizzes
+            </li>
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Complete course & earn certificate
+            </li>
 
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Learn version control with Git
+            </li>
+            <li>
+              <svg
+                aria-hidden="true"
+                fill="none"
+                focusable="false"
+                height="20"
+                viewBox="0 0 20 20"
+                width="20"
+              >
+                <path
+                  d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+              Deploy your website online
+            </li>
+          </ul>
+        </details>
+      </div>
+      <div class="ins-cont">
+        <div class="section">
+          <details open>
+            <summary>Course Content</summary>
 
+            <div class="lesson">
+              <div class="lesson-title">Lesson 1: Introduction to Web</div>
+              <div class="lesson-icons">
+                <span>🎬</span>
+                <span>📄</span>
+                <span>📝</span>
+              </div>
+            </div>
+            <div class="lesson">
+              <div class="lesson-title">Lesson 2: HTML Basics</div>
+              <div class="lesson-icons">
+                <span>🎬</span>
+                <span>📄</span>
+                <span>📝</span>
+              </div>
+            </div>
+            <div class="lesson">
+              <div class="lesson-title">Lesson 3: CSS Basics</div>
+              <div class="lesson-icons">
+                <span>🎬</span>
+                <span>📄</span>
+                <span>📝</span>
+              </div>
+            </div>
+            <div class="lesson">
+              <div class="lesson-title">Lesson 4: JS Basics</div>
+              <div class="lesson-icons">
+                <span>🎬</span>
+                <span>📄</span>
+                <span>📝</span>
+              </div>
+            </div>
+          </details>
+        </div>
 
-    <li>
-  <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-    <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-  </svg>
-  Learn version control with Git
-</li>
-<li>
-  <svg aria-hidden="true" fill="none" focusable="false" height="20" viewBox="0 0 20 20" width="20">
-    <path d="M8.104 12.313l6.23-6.23a.73.73 0 011.063 0 .73.73 0 01.007 1.058l-6.758 6.776a.73.73 0 01-1.063 0l-2.979-2.98a.73.73 0 010-1.062.733.733 0 011.063 0l2.437 2.438z" fill="currentColor"></path>
-  </svg>
-  Deploy your website online
-</li>
+        <div class="ad-box">
+          <img src="/images/AD2.jpg" alt="Ad Image" class="ad-image" />
+          <button class="close-btn">X</button>
+        </div>
 
-  </ul>
+        <!-- <div class="instructor-side-box">
+  <details open>
+    <summary>Your Instructor</summary>
+
+    <div class="instructor-profile">
+      <img src="images/instructor.jpeg" alt="Instructor Photo">
+      <div>
+        <div class="instructor-name">Alex Johnson</div>
+        <div class="instructor-bio">Senior Web Developer</div>
+      </div>
+    </div>
+
+    <p>
+      Alex is a full-stack web developer with 7+ years of experience in teaching and building
+      modern websites. He helped more than 40,000 students start their coding journey.
+    </p>
   </details>
-</div>
-
-      <div class="section">
-        <h2>Course Content</h2>
-        <div class="lesson">
-          <div class="lesson-title">Lesson 1: Introduction to Web</div>
-          <div class="lesson-icons">
-            <span>🎬</span>
-            <span>📄</span>
-            <span>📝</span>
-          </div>
-        </div>
-        <div class="lesson">
-          <div class="lesson-title">Lesson 2: HTML Basics</div>
-          <div class="lesson-icons">
-            <span>🎬</span>
-            <span>📄</span>
-            <span>📝</span>
-          </div>
-        </div>
-        <div class="lesson">
-          <div class="lesson-title">Lesson 3: CSS Basics</div>
-          <div class="lesson-icons">
-            <span>🎬</span>
-            <span>📄</span>
-            <span>📝</span>
-          </div>
-        </div>
-        <div class="lesson">
-          <div class="lesson-title">Lesson 4: JS Basics</div>
-          <div class="lesson-icons">
-            <span>🎬</span>
-            <span>📄</span>
-            <span>📝</span>
-          </div>
-        </div>
+</div> -->
       </div>
-
-
- 
       <div class="certificate">
         <div class="certificate-info">
           <h3>Certificate of Completion</h3>
@@ -531,8 +1083,19 @@ summary::-webkit-details-marker {
     </div>
 
     <div class="enroll-fixed">
-     <!-- <p>Join more than 40,500 learners now</p> -->
-      <button>Enroll Now</button> 
+      <button>Enroll Now</button>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const closeBtn = document.querySelector(".close-btn");
+        const adBox = document.querySelector(".ad-box");
+
+        closeBtn.addEventListener("click", function () {
+          adBox.style.display = "none";
+        });
+      });
+    </script>
+
+    <div id="footer"></div>
   </body>
 </html>
