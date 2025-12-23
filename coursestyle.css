@@ -1,0 +1,120 @@
+/* الأساسيات */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f3ece2;
+  background-color: red;
+}
+
+.container {
+  width: 100%;
+  /* max-width: 1400px; قيمة منطقية */
+ 
+}
+/* 1. تصفير شامل للجسم والحاويات المستوردة */
+html, body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    overflow-x: hidden; /* يمنع ظهور شريط التمرير العرضي */
+}
+
+/* 2. إجبار النافبار والفوتر على العرض الكامل */
+#navbar, #footer {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+}
+
+/* 3. استهداف كلاسات بوتستراب داخل الملفات المستوردة */
+#navbar .container, 
+#navbar .container-fluid,
+#footer .container, 
+#footer .container-fluid {
+    max-width: 100% !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+/* 4. إصلاح قسم الهيرو والكونتينر في صفحتك */
+.container {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+}
+
+.hero {
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+/* الهيرو سيكشن */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(135deg, #7d86a3);
+  color: white;
+  padding: 40px 40px 100px;
+}
+
+.hero-left { max-width: 60%; }
+.hero-left h1 { font-size: 36px; margin-bottom: 15px; }
+
+.badges { display: flex; gap: 12px; margin-bottom: 20px; }
+.badge {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* الصناديق والمعلومات */
+.section1 {
+  max-width: 1250px;
+  margin: -70px auto 0; /* دمج التوب مارجن مع الإزاحة */
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #c7ddff;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.section1.about-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* المدرس */
+.instructor-box { display: flex; align-items: center; gap: 10px; }
+.instructor-photo, .instructor-photo img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* الدروس والقائمة */
+.lesson {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  margin-left: 55px;
+}
+
+/* زر الاشتراك الثابت */
+.enroll-fixed {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #0f4c81;
+  padding: 15px;
+  text-align: center;
+  z-index: 100;
+}
