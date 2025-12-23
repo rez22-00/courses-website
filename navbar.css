@@ -1,0 +1,38 @@
+.navbar .container-fluid {
+    max-width: 100% !important;
+    padding-left: 15px; /* أو القيمة التي تفضلينها */
+    padding-right: 15px;
+}
+
+/* تصفير الهوامش لضمان التصاق النافبار */
+.navbar {
+    margin: 0 !important;
+}
+
+/* Dropdown Container */
+.navbar .dropdown-menu {
+
+  max-height: 260px;
+  overflow-y: auto;
+  background: #ffffff;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid #dbe7f0;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Dropdown Items */
+.navbar .dropdown-item {
+  color: #001d39;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s ease;
+}
+
+/* Hover Effect */
+.navbar .dropdown-item:hover {
+  background: #e6f2ff;
+  color: #004075;
+  transform: translateX(3px);
+}
