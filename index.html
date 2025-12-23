@@ -1,0 +1,297 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" type="image/png"
+        href="style/HelperChoice Logo _ SVG _ Real Company _ Alphabet, Letter H Logo3.png">
+
+    <!--ربط النافبار و الفوتر-->
+    <script>
+        fetch("navbar.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("navbar").innerHTML = data;
+            });
+    </script>
+
+    <script>
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data;
+            });
+    </script>
+
+
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero text-center">
+        <div class="container hero-container">
+            <h1 class="fw-bold text-light">Welcome to our Hello World platform</h1>
+            <p class="lead mt-3 text-light">Learn new skills and improve your career from anywhere!</p>
+
+            <a href="categories.html" class="btn btn-light btn-lg mt-3 me-2 ">Explore Courses</a>
+            <a href="#footer" class="btn btn-light btn-lg mt-3 me-2 ">Contact Us</a>
+        </div>
+
+    </section>
+
+    <section class="container text-center mt-5 ">
+        <div class="row hero-points">
+            <div class="hero-point col-md-4">
+                <img src="	https://www.edraak.org/static/scripts/1df27a1f65d7a11c430110d8c0b19059.svg" alt="">
+                <br>
+                <h6>Learn for free</h6>
+            </div>
+            <div class="hero-point col-md-4">
+                <img src="	https://www.edraak.org/static/scripts/24a5b0927f8bfdee096f8788396076ef.svg" alt="">
+                <br>
+                <h6>In Arabic</h6>
+            </div>
+            <div class="hero-point col-md-4">
+                <img src="	https://www.edraak.org/static/scripts/1b5b8c5bbcaaa4382cf7d3656fd0d067.svg" alt="">
+                <br>
+                <h6>World Class Content and Instructors</h6>
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+
+
+    <!-- ===================== MYCOURSES ===================== -->
+    <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="text-left fw-bold">My Courses</h2>
+            <a href="mycourses.html" class="btn btn-outline-dark me-4"><i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <hr><br>
+
+        <div class="row g-4">
+            <!-- Course 1 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm me-0">
+                    <img src="style/Screenshot 2025-11-25 160332.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">HTML & CSS Basics</h5>
+                        <p class="card-text">Learn the basics of web development.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">Continue</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 2 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm">
+                    <img src="style/Screenshot 2025-11-25 160141.png" class="card-img-top ">
+                    <div class="card-body">
+                        <h5 class="card-title">JavaScript Beginner</h5>
+                        <p class="card-text">Start your JS learning journey.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">Continue</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Course 3 -->
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm ms-0">
+                    <img src="style/Screenshot 2025-11-25 163932.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Graphic design Basics</h5>
+                        <p class="card-text">Learn Graphic design easily.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">Continue</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <br><br><br>
+
+    <!-- ===================== CATEGORIES ===================== -->
+    <section class="container mt-0 categ-sec ">
+
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="text-left fw-bold">Categories</h2>
+            <a href="categories.html" class="btn btn-outline-dark me-4"><i class="bi bi-arrow-right"></i></a>
+        </div>
+        <hr><br>
+        <div class="row g-1">
+            <div class="col-md-4">
+                <div class="category-card text-center me-0">
+                    <img src="style/Marketing Illustrations - Alex Fedotov2.png" alt="" class="card-img-top categ">
+                    <h5><a href="#">Programming basics</a></h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card  text-center">
+                    <img src="style/3D Character and Elements - Evgeny Bazykin.png" alt="" class="card-img-top categ">
+                    <h5><a href="#">Graphic design</a></h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card    text-center ms-0">
+                    <img src="style/download (6).jpeg" alt="" class="card-img-top categ ">
+                    <h5><a href="#">Web development</a></h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card   text-center me-0">
+                    <img src="style/download (8).jpeg" alt="" class="card-img-top categ">
+                    <h5><a href="#">Soft skills</a></h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card text-center">
+                    <img src="style/download (9).jpeg" alt="" class="card-img-top categ mb-3">
+                    <h5><a href="#">Data analysis</a></h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="category-card   text-center  ms-0">
+                    <img src="style/download (10).jpeg" alt="" class="card-img-top categ mb-3">
+                    <h5><a href="#">Languages</a></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- ===================== FEATURED COURSES ===================== -->
+    <section class="container mt-5">
+        <div class="d-flex justify-content-between align-items-center">
+            <h2 class="text-left fw-bold">Featured Courses</h2>
+            <a href="categories.html" class="btn btn-outline-dark me-4"><i class="bi bi-arrow-right"></i></a>
+        </div>
+        <hr><br>
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm me-0">
+                    <img src="style/Screenshot 2025-11-25 173908.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Web Basics</h5>
+                        <p class="card-text">Learn HTML, CSS, JS and build websites.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">View </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm">
+                    <img src="style/Screenshot 2025-11-25 175126.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Design Theories</h5>
+                        <p class="card-text">Learn ADVANCED Graphic Design Theories.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">View </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card course-card shadow-sm ms-0">
+                    <img src="style/Screenshot 2025-11-25 175536.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Business Soft Skills</h5>
+                        <p class="card-text">Understand basic AI concepts easily.</p>
+                        <a href="coursedetails.html" class="btn btn-primary w-100">View </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br><br>
+
+    <!-- ===================== WHY CHOOSE US ===================== -->
+    <section class="container  my-5" id="choose">
+        <h2 class="text-center fw-bold ">Why Choose Us?</h2>
+        <hr><br>
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="text-center choose-card ">
+                    <img src="style/🚀 Grow Your Brand Online _ 📈 SEO, Ads, Social Media & More _ 🎯 Digital Marketing Tips & Tricks _.jpeg"
+                        alt="" class="choose-img">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pt-5 bg-light choose-card ">
+                    <h4 class="fw-bold">Simple Platform</h4>
+                    <p class="text-muted mt-2">We focus on making learning simple, clear, and enjoyable.
+                        Our platform is designed with students in mind—every course is explained step-by-step, supported
+                        with practical examples, and organized in a way that helps you understand concepts easily
+                        without feeling overwhelmed. Whether you’re a complete beginner or improving your skills, you’ll
+                        always find content that matches your level.</p>
+
+                </div>
+            </div>
+            <br><br><br>
+            <div class="col-md-8">
+                <div class="pt-5 bg-light choose-card ">
+                    <h4 class="fw-bold">High Quality Content</h4>
+                    <p class="text-muted mt-2">We care about quality, support, and your learning journey.
+                        We provide updated content, clean design, and a smooth user experience to keep you focused on
+                        what matters most: learning. Our goal is to give you the tools, guidance, and confidence you
+                        need to grow, succeed, and reach your goals—one lesson at a time.</p>
+
+                </div>
+
+            </div>
+            <div class="col-md-4">
+                <div class="text-center choose-card">
+                    <img src="style/From law firm branding to lawyer headshots, this….jpeg" alt="" class="choose-img">
+                </div>
+            </div>
+            <br><br><br>
+            <div class="col-md-4">
+                <div class="text-center choose-card ">
+                    <img src="style/🚀 Grow Your Brand Online _ 📈 SEO, Ads, Social Media & More _ 🎯 Digital Marketing Tips & Tricks _.jpeg"
+                        alt="" class="choose-img">
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="pt-5 bg-light choose-card ">
+                    <h4 class="fw-bold">Save Your Time</h4>
+                    <p class="text-muted mt-2">We know how frustrating it is to spend hours jumping from one YouTube
+                        video to another—searching, scrolling, and trying to find the right explanation. It’s easy to
+                        get lost and end up with half-answers and unorganized information.
+                        That’s why our platform brings everything together in one place: clear, structured, and direct
+                        lessons without the endless searching. Every step is organized so you learn faster, stay
+                        focused, and never waste your time again.</p>
+
+                </div>
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <br><br><br><br><br><br>
+    <div id="footer"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
